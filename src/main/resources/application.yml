@@ -1,0 +1,16 @@
+server:
+  port: 8888
+  
+spring:
+  #caso arquivo seja acessado de forma nativa, diretamente no disco ex: c:/
+  #profiles:
+   # active: native
+  cloud:
+    config:
+      server:
+       # native:
+          git: 
+            uri: https://github.com/marcelogarces/microservice-config
+            search-paths: ibovespa        
+         # search-locations: c:/microservice-repo 
+ 
